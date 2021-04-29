@@ -12,7 +12,7 @@ body {
     background: url(../img/1.jpg);
     position: fixed;
     left: 0;
-    width: 33.333%;
+    width: 33.333333%;
     height: 100%;
     background-size: cover;
     color: white;
@@ -36,4 +36,14 @@ body {
 
 .full-height {
     height: 100%;
+}
+
+.quote {
+    float: right;
+    margin: 2rem;
+}
+
+section {
+    margin: 5rem;
+    font-size: 1.2rem;
 }
