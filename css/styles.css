@@ -8,14 +8,9 @@ body {
     color: #444;
 }
 
-.intro-left {
+.background-img {
     background: url(../img/1.jpg);
-    position: fixed;
-    left: 0;
-    width: 33.333333%;
-    height: 100%;
     background-size: cover;
-    color: white;
 }
 
 @media (max-width: 768px) {
