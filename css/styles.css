@@ -1,25 +1,12 @@
 body, html {
     height: 100%;
+    font-size: 1rem;
 }
 
 body {
     font-weight: 200;
     font-size: 1.5rem;
     color: #444;
-}
-
-.background-img {
-    background: url(../img/1.jpg);
-    background-size: cover;
-}
-
-@media (max-width: 768px) {
-    .intro-left {
-        height: 30vh;
-        margin-bottom: 0;
-        position: relative;
-        width: 100%;
-    }
 }
 
 .avatar {
@@ -33,12 +20,22 @@ body {
     height: 100%;
 }
 
-.quote {
-    float: right;
-    margin: 2rem;
-}
-
 section {
     margin: 5rem;
     font-size: 1.2rem;
+}
+
+.gradient {
+    background: rgb(0, 97, 242);
+    background: linear-gradient(
+        135deg,
+        rgba(0, 97, 242, 1) 0%,
+        rgba(105, 0, 199, 1) 100%
+    );
+}
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: white;
 }
