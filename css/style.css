@@ -119,6 +119,12 @@ h3 { font-size: var(--fs-h3);}
     margin-bottom: 1em;
 }
 
+.section__subtitle--my-projects {
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1em;
+}
+
 /* Intro */
 
 .intro {
@@ -216,5 +222,32 @@ h3 { font-size: var(--fs-h3);}
     .my-skills {
         display: grid;
         grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
     }
+
+    .section__title-my-skills {
+        grid-area: title;
+    }
+
+    .section__subtitle--my-skills {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+}
+
+/* My Projects */
+
+.my-projects {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
 }
