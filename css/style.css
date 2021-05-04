@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* My custom properties */
 
 :root {
@@ -33,6 +34,7 @@
         --fs-body: 1.125rem;
     }
 }
+
 
 /* General styles */
 
@@ -67,6 +69,7 @@ strong {
     outline-offset: 3px;
 }
 
+
 /* Buttons */
 
 .btn {
@@ -87,6 +90,7 @@ strong {
     transform: scale(1.1);
 }
 
+
 /* Typography */
 
 h1, h2, h3 {
@@ -97,7 +101,6 @@ h1, h2, h3 {
 h1 { font-size: var(--fs-h1);}
 h2 { font-size: var(--fs-h2);}
 h3 { font-size: var(--fs-h3);}
-
 
 .section__title {
     margin-bottom: .25em;
@@ -112,9 +115,7 @@ h3 { font-size: var(--fs-h3);}
     font-size: var(--fs-h3);
 }
 
-
 .section__subtitle--intro,
-.section__subtitle--who-i-am,
 .section__subtitle--my-skills,
 .section__subtitle--my-projects {
     background: var(--clr-accent);
@@ -126,8 +127,8 @@ h3 { font-size: var(--fs-h3);}
 .section__subtitle--my-projects {
     color: var(--clr-dark);
     font-weight: var(--fw-bold);
-    margin-bottom: 1em;
 }
+
 
 /* Header */
 
@@ -227,6 +228,7 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
+
 /* Intro */
 
 .intro {
@@ -237,7 +239,7 @@ header {
     box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .intro {
         display: grid;
         width: min-content;
@@ -266,6 +268,7 @@ header {
     }
 }
 
+
 /* Who I Am */
 
 .who-i-am {
@@ -292,66 +295,66 @@ header {
     opacity: 0.25;
 }
 
-.personal-facts {
-    margin-bottom: 4em;
-}
-
-.personal-fact {
-    max-width: 75%;
-    margin: 0 auto;
-}
-
 @media (min-width: 800px) {
     .who-i-am {
         display: block;
+        max-width: 1500px;
         margin: 0 auto;
     }
-
-    /*
-    .personal-fact + .personal-fact {
-        margin-left: 2em;
-    }
-    */
 }
+
 
 /* My Skills */
 
 .my-skills {
     margin: 0 auto;
+    display: block;
+    text-align: center;
 }
 
-@media (min-width: 600px) {
+.section__title--my-skills {
+    position: relative;
+}
+
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.soft-skill {
+    max-width: 35%;
+    margin: 15px 55px;
+}
+
+.soft-skill .fas {
+    margin: 15px;
+}
+
+@media (min-width: 800px) {
     .my-skills {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-
-    .section__title-my-skills {
-        grid-area: title;
-    }
-
-    .section__subtitle--my-skills {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
+        display: block;
+        max-width: 1500px;
+        margin: 0 auto;
     }
 }
+
 
 /* My Projects */
 
 .my-projects {
     background-color: var(--clr-dark);
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
+}
+
+.section__title--my-projects {
+    color: var(--clr-accent);
+    position: relative;
 }
 
 .portfolio {
@@ -380,6 +383,7 @@ header {
     transform: scale(1.2);
     opacity: 0.75;
 }
+
 
 /* Footer */
 
