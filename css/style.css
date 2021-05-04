@@ -15,7 +15,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #c7b146;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -196,7 +196,8 @@ header {
     transform: rotate(0.625turn);
 }
 
-.nav-open .hamburger::before {
+.nav-open .hamburger::before,
+.nav-open .hamburger::after {
     transform: rotate(90deg) translateX(-6px);
 }
 
