@@ -315,7 +315,15 @@ header {
     position: relative;
 }
 
-.section__title--my-skills::after {
+.section__subtitle--my-skills {
+    padding: 0.25em;
+    font-family: var(--ff-secondary);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.section__title--my-skills::after,
+.section__subtitle--my-skills::after {
     content: '';
     display: block;
     width: 3em;
@@ -324,14 +332,6 @@ header {
     background: var(--clr-dark);
     opacity: 0.25;
 }
-
-.section__subtitle--my-skills {
-    padding: 0.25em;
-    font-family: var(--ff-secondary);
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
 
 .soft-skills,
 .hard-skills {
