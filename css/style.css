@@ -359,9 +359,11 @@ header {
 
 .hard-skill {
     font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
     background-color: var(--clr-accent);
     padding: 5px 1em;
     border-radius: 5px;
+    box-shadow: var(--bs);
 }
 
 .soft-skill i {
@@ -370,7 +372,7 @@ header {
 
 .soft-skill:hover,
 .hard-skill:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 @media (min-width: 800px) {
