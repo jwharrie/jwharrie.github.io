@@ -116,7 +116,6 @@ h3 { font-size: var(--fs-h3);}
 }
 
 .section__subtitle--intro,
-.section__subtitle--my-skills,
 .section__subtitle--my-projects {
     background: var(--clr-accent);
     padding: 0.25em;
@@ -316,20 +315,62 @@ header {
     position: relative;
 }
 
-.soft-skills {
+.section__title--my-skills::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.25;
+}
+
+.section__subtitle--my-skills {
+    padding: 0.25em;
+    font-family: var(--ff-secondary);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.soft-skills,
+.hard-skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5em;
 }
 
-.soft-skill {
+.soft-skills {
+    margin-bottom: 1.5em;
+}
+
+.hard-skills {
+    list-style: none;
+}
+
+.soft-skill,
+.hard-skill {
     max-width: 35%;
     margin: 15px 55px;
+    transition: transform 200ms ease-in-out;
 }
 
-.soft-skill .fas {
-    margin: 15px;
+.hard-skill {
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-accent);
+    padding: 5px 1em;
+    border-radius: 5px;
+}
+
+.soft-skill i {
+    margin-top: 10px;
+}
+
+.soft-skill:hover,
+.hard-skill:hover {
+    transform: scale(1.2);
 }
 
 @media (min-width: 800px) {
