@@ -482,3 +482,11 @@ header {
 .social-list__link {
     padding: 0.5em;
 }
+
+/* Individual portfolio item pages */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1500px;
+    margin: 0 auto;
+}
