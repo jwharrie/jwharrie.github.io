@@ -35,13 +35,32 @@
       <h1 class="section__title section__title--intro">
         <strong>Calorie Tracker</strong> App
       </h1>
-      <p class="section__subtitle section__subtitle--intro">Powered by <strong>Python</strong>, <strong>Node.js</strong> & <strong>C</strong></p>
+      <p class="section__subtitle section__subtitle--intro">Powered by <strong>Python</strong>, <strong>Node.js</strong>, <strong>C</strong> & <strong>Docker</strong></p>
       <img src="img/projects/food.jpg" alt="Food Pic" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum itaque voluptatibus eos consequuntur amet modi magnam, quas dolores soluta cum voluptatem laudantium velit, corrupti dolor nihil. Commodi corporis sequi excepturi!</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non culpa porro, architecto, autem ratione neque odio enim corrupti distinctio doloremque ea natus quibusdam molestiae commodi! Cupiditate aut mollitia porro tempora.</p>
+      <p>
+        For my course in comparative programming languages, I was tasked in developing a project that utilized 3 separate programming languages. I decided 
+        to develop a CLI calorie tracker app that combined the best features of Python, C and JavaScript. The app would run in a Docker container so that 
+        it can run independent of the user's operating system.
+      </p>
+      <p>
+        Python was chosen to run the user interface on the command line. Users would be given prompts to enter data or type in a menu option. Python would validate 
+        the user's input to prevent unwanted behaviours. As a scripting language with garbage collecting and dynamic-typing, I felt that Python would be a great 
+        choice to quickly implement a CLI that can run as long as the user wishes. Python's exception handling also made it easy for users to return to previous 
+        menus or cancel data CRUD operations.
+      </p>
+      <p>
+        C was used to execute simple but vital functions. These functions are responsible for unit conversions, calculating calorie amounts, output selection 
+        and input validation. C functions are more efficient for their static typing and static binding, which 
+        was why these operations were written in C rather than Python. The Python code accessed the C code through SWIG, a foreign function interface.
+      </p>
+      <p>
+        JavaScript was used to run a Node.js server under the Express.js framework. The server would receive requests from the Python code and then send back 
+        responses. The Node.js environment allowed for fast, asynchronous and event-driven performance that can respond to user requests at any moment. It also 
+        made it easy for me to perform CRUD operations for personal user and food data.
+      </p>
     </div>
 
     <!-- Footer -->
