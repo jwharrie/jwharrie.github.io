@@ -40,8 +40,30 @@
     </section>
 
     <div class="portfolio-item-individual">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nisi vel facilis nobis at aliquam laudantium doloribus ipsam, magni tempore minima dolores? Nisi ducimus quod similique maxime animi quidem autem!</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nisi vel facilis nobis at aliquam laudantium doloribus ipsam, magni tempore minima dolores? Nisi ducimus quod similique maxime animi quidem autem!</p>
+      <p>
+        One of the more interesting courses I took at Simon Fraser University was about information retrieval (IR) and web search. Some of the 
+        topics taught included webscraping and text processing, both handy for my Twitter spell correction program.
+      </p>
+      <p>
+        The purpose of the program is to retrieve the 1000 most recent tweets, identify mispelled words and suggest spelling corrections for each word. 
+        I was required to gain access and understand Twitter's API. Afterwards I needed a way to seamlessly utilize the API, retrieve the tweets, process 
+        each tweet for words and analyze the word collection for spelling mistakes.
+      </p>
+      <p>
+        The solution was to write a Python program that took advantage of open-source, readily available and essential modules. The module <i>tweepi</i> 
+        allowed me to easily access Twitter through the Twitter API in Python and write a stream of tweets into a .txt file. Python's regex module, 
+        <i>re</i>, removed URLs and punctuation marks found in Tweets. <i>nltk</i>, a natural language processing module, supplied a list of English 
+        stopwords, insignificant words that occur very frequently ('a', 'the', 'of', etc.). I used the list to filter out stopwords found in the Tweets 
+        to make my word collection only filled with significant and interesting words. <i>pandas</i> dataframes provided great versatility and convenience 
+        in applying word processing functions to my collection of Tweets.
+      </p>
+      <p>
+         After creating my Tweet word collection I began searching for mispelled words and their suggested word corrections. I created a Python dictionary 
+         containing each word's frequency, then I made a series of assumptions about what a mispelled word would most likely be to avoid falsely selecting 
+         a correcly-spelled word. With these assumptions and the dictionary I successfully detected mispelled words and generated a list of spelling suggestions
+         for each one.
+      </p>
+
     </div>
 
     <!-- Footer -->
